@@ -1,0 +1,51 @@
+created_by: celek
+domain: volleyball rules
+seed_examples:
+- answer: The playing area includes the playing court and the free zone. It shall be 
+    rectangular and symmetrical. 
+    The playing court is a rectangle measuring 18#x#9#m, surrounded by a 
+    free zone which is a minimum of 3 meters wide on all sides. 
+    The free playing space is the space above the playing area which is free 
+    from any obstructions. The free playing space shall measure a minimum 
+    of 7 meters in height from the playing surface. 
+  question: What are the dimensions of the court of a volleyball game?
+- answer: All lines are 5 centimeters wide. They must be of a light colour which is different
+    from the colour of the "oor and from any other lines.
+    Boundary lines are Two side lines and two end lines mark the playing court. Both side lines
+    and end lines are drawn inside the dimensions of the playing court.
+    Centre line is the axis of the centre line divides the playing court into two equal
+    courts measuring 9 by 9 meters each; however the entire width of the line is
+    considered to belong to both courts equally. This line extends beneath
+    the net from side line to side line.  
+    On each court, an attack line, whose rear edge is drawn 3 meters back from
+    the axis of the centre line, marks the front zone.
+  question: What are the different lines on a volleyball court ?
+- answer: Front zone On each court the front zone is limited by the axis of the centre line and 
+    the rear edge of the attack line. The front zone is considered to extend beyond the side lines 
+    to the end of the free zone. Service zone The service zone is a 9#m wide area behind each end line. 
+    It is laterally limited by two short lines, each 15#cm long, drawn 20#cm behind the end line 
+    as an extension of the side lines. Both short lines are included in the width of the service 
+    zone. In depth, the service zone extends to the end of the free zone.
+  question: What are the different zones on a volleyball court?
+- answer: Placed vertically over the centre line there is a net whose top is set at the
+    height of 2.43 meters for men and 2.24 meters for women.
+    Its height is measured from the centre of the playing court. The net
+    height (over the two side lines) must be exactly the same and must not
+    exceed the official height by more than 2 cm. 
+  question:  what is the heigh of the net in volleyball ? 
+- answer: An antenna is a "exible rod, 1.80 meter long and 10 milimeter in diameter, made
+    of fiberglass or similar material.
+    An antenna is fastened at the outer edge of each side band. The
+    antennae are placed on opposite sides of the net.
+    The top 80 cm of each antenna extends above the net and is marked
+    with 10 cm stripes of contrasting colour, preferably red and white.
+    The antennae are considered as part of the net and laterally delimit the
+    crossing space.
+  question: what arethe dimentions and locations of the 2 antennaes on a volleyball net ?
+task_description: ""
+document:
+  repo: https://github.com/celek/taxonomy/tree/main/docs/triaging
+  commit: 1dc85d0fc19e21ad8adbf5f98bd8aa1e31257d0a
+  patterns:
+    - fivb*.md
+
