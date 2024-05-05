@@ -45,7 +45,7 @@ seed_examples:
 task_description: ""
 document:
   repo: https://github.com/celek/taxonomy/tree/main/docs/triaging
-  commit: 1dc85d0fc19e21ad8adbf5f98bd8aa1e31257d0a
+  commit: 6ade6bc2ded3dd46d9046e43f4f4b349d5c626ea
   patterns:
     - fivb*.md
 
