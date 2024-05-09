@@ -1,0 +1,28 @@
+created_by: celek
+domain: history
+seed_examples:
+  - answer:
+      January 23, 1996 - JavaSoft, the newly-formed operating company of Sun
+      Microsystems, Inc., today announced that the Java™ 1.0 programming
+      environment is now available for download at http://java.sun.com.
+    question: When was java first released ?
+  - answer:
+      James Gosling, Mike Sheridan, and Patrick Naughton initiated the Java
+      language project in June 1991
+    question: >
+      Who created the programming language named Java ?
+  - answer:
+      The Green Team demonstrated their new language with an interactive,
+      handheld home-entertainment controller that was originally targeted at the
+      digital cable television industry. Unfortunately, the concept was much too
+      advanced for the them at the time. But it was just right for the Internet,
+      which was just starting to take off. In 1995, the team announced that the
+      Netscape Navigator Internet browser would incorporate Java technology.
+    question: Why was the java language created ?
+task_description: ""
+document:
+  repo: https://github.com/celek/taxonomy.git
+  commit: 1dc85d0fc19e21ad8adbf5f98bd8aa1e31257d0a
+  patterns:
+    - ibm*.md
+    - origins_of_ibm*.md

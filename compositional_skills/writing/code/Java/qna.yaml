@@ -1,0 +1,81 @@
+created_by: celek
+domain: coding
+seed_examples:
+  - answer: "
+      // Assisted by WCA@IBM \
+      // Latest GenAI contribution: ibm/granite-20b-code-instruct-v2 \
+      import java.util.*; \
+      \
+      public class BiggestNumbers { \
+          public static void main(String[] args) { \
+              Scanner scanner = new Scanner(System.in); \
+              System.out.print(\"Enter the number of elements: \"); \
+              int n = scanner.nextInt(); \
+              int[] arr = new int[n]; \
+              System.out.println(\"Enter the elements:\");\ 
+              for (int i = 0; i < n; i++) { \
+                  arr[i] = scanner.nextInt(); \
+              } \
+              Arrays.sort(arr); \
+              System.out.println(\"The 3 biggest numbers are:\"); \
+              for (int i = n - 1; i >= n - 3; i--) { \
+                  System.out.println(arr[i]); \
+              } \
+          } \
+      } \
+      " 
+    question: Generate code in Java that finds the 3 biggest numbers in a list of integers
+  - answer:
+        "// Assisted by WCA@IBM \
+        // Latest GenAI contribution: ibm/granite-20b-code-instruct-v2 \
+        import java.util.*; \
+        \
+        public class CharacterFrequency { \
+            public static void main(String[] args) { \
+                Scanner scanner = new Scanner(System.in); \
+                System.out.print(\"Enter a string: \"); \
+                String str = scanner.nextLine(); \
+                Map<Character, Integer> freqMap = new HashMap<>(); \
+                for (char c : str.toCharArray()) { \
+                    freqMap.put(c, freqMap.getOrDefault(c, 0) + 1); \
+                } \
+                List<Map.Entry<Character, Integer>> sortedFreqList = new ArrayList<>(freqMap.entrySet()); \
+                Collections.sort(sortedFreqList, (e1, e2) -> e2.getValue() - e1.getValue()); \
+                System.out.println(\"Top 3 characters:\"); \
+                for (int i = 0; i < Math.min(3, sortedFreqList.size()); i++) { \
+                    System.out.println(sortedFreqList.get(i).getKey() + \" - \" + sortedFreqList.get(i).getValue()); \
+                } \
+            } \
+        } \ "
+    question: >
+      How do you generate code in java that creates a frequency distribution of the characters in a given string and only show the top 3 char.
+  - answer:
+      "// Assisted by WCA@IBM \
+      // Latest GenAI contribution: ibm/granite-20b-code-instruct-v2 \
+      public class BubbleSort { \
+          public static void main(String[] args) { \
+              int[] arr = {5, 4, 3, 2, 1}; \
+              int n = arr.length; \
+              for (int i = 0; i < n - 1; i++) { \
+                  for (int j = 0; j < n - i - 1; j++) { \
+                      if (arr[j] > arr[j + 1]) { \
+                          int temp = arr[j]; \
+                          arr[j] = arr[j + 1]; \
+                          arr[j + 1] = temp; \
+                      } \
+                  } \
+              } \
+              System.out.println(\"Sorted array: \");\
+              for (int i = 0; i < n; i++) { \
+                  System.out.print(arr[i] + \" \");
+              } \
+          }\ 
+      }"
+    question: Can you generate a bubble sort and aquick sort and compare their speed of execution in Java ? 
+task_description: ""
+document:
+  repo: https://github.com/celek/taxonomy.git
+  commit: 1dc85d0fc19e21ad8adbf5f98bd8aa1e31257d0a
+  patterns:
+    - ibm*.md
+    - origins_of_ibm*.md
